@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,15 +21,15 @@
                     <h1>/AC/</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#servicios">SERVICIOS</a></li>
-                            <li><a href="#portafolio">PORTAFOLIO</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
 
-                    <div id="icono-nav">
+                    <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                     <div class="redes">
@@ -168,7 +168,7 @@
                 <span class="porcentaje">65%</span>
             </div>
             <div class="barra">
-                <div id="html" class="barra-progreso2"></div>
+                <div id="js" class="barra-progreso2"></div>
             </div>
         </div>
         <div class="skill">
@@ -177,7 +177,7 @@
                 <span class="porcentaje">30%</span>
             </div>
             <div class="barra">
-                <div id="html" class="barra-progreso3"></div>
+                <div id="gt" class="barra-progreso3"></div>
             </div>
         </div>
         <div class="skill">
@@ -186,7 +186,7 @@
                 <span class="porcentaje">90%</span>
             </div>
             <div class="barra">
-                <div id="html" class="barra-progreso4"></div>
+                <div id="ig" class="barra-progreso4"></div>
             </div>
         </div>
     </div>
@@ -285,7 +285,8 @@
                     <input type="text" placeholder="Tema..." class="input-full">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input-full"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje ..."
+                        class="input-full"></textarea>
                 </div>
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
@@ -300,7 +301,7 @@
         </div>
     </footer>
 
-
+    <script src="main.js"></script>
 </body>
 
 </html>
