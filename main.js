@@ -21,6 +21,7 @@ function responsiveMenu() {
     }
 }
 
+document.addEventListener('scroll', efectoHabilidades());
 window.onscroll = function () {
     efectoHabilidades()
 };
@@ -35,3 +36,5 @@ function efectoHabilidades() {
         document.getElementById("ig").classList.add("barra-progreso4");
     }
 };
+
+efectoHabilidades()
